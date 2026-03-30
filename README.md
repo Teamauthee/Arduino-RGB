@@ -12,7 +12,7 @@ deployment using RGB color data as the domain.
 
 **1. Labeling with K-Means**
 Raw RGB values are clustered into three categories (red, green, blue) using K-Means.
-No manual annotation needed — the algorithm discovers the color groupings automatically.
+No manual annotation needed, the algorithm discovers the color groupings automatically.
 
 **2. Training with PyTorch**
 A lightweight neural network is trained on the labeled data to learn the decision
@@ -27,10 +27,3 @@ prediction.
 ## Stack
 - Python · scikit-learn · PyTorch
 - Arduino (C++) · Breadboard · RGB LEDs
-
-## Structure
-├── data/          # Raw RGB color samples
-├── clustering/    # K-Means labeling script
-├── model/         # PyTorch training + weight export
-├── arduino/       # C++ inference sketch
-└── README.md
