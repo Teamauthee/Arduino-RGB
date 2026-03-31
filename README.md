@@ -34,3 +34,7 @@ For this first Arduino project that is not in the starterkit book, I learnt how 
 
 ### Problems
 The accuracy score is pretty low for just predicting to which class color they belong, I could first add some data (other colors with their RGB code) but mostly I could use another clustering algorithm like DBSCAN or MeanShift but as we can expect with Kmeans is that the random first centroid plays a huge role when clustering the data in three classes (My best result was 92.17% accuracy). I could play with more variety of NN architechture (I tested three of them including the one in nn.py) but I needed a light NN architechture where weights can fit into the SRAM of the Arduino Uno (2 Ko), so I was limited in choice that is why on the testing colors in the c++ code, I get 50% accuracy with RGB LEDs (see Schema). At the end, I was satisfied with the results as the goal was to get things working and it does.
+
+### Schema
+<img width="637" height="872" alt="RGB LEDs" src="https://github.com/user-attachments/assets/34aa5325-f061-4bb5-8756-393f8745f5b6" />
+
